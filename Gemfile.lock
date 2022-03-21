@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/up-for-grabs/tooling.git
-  revision: cc2e6010ba3e6d3e2ab4e110440f31f6f90a4e7f
+  revision: 51005c7ab5c7826ce8f0216430e6ac94fe9e839f
   branch: main
   specs:
     up_for_grabs_tooling (0.0.6)
@@ -12,7 +12,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.4.1)
+    activesupport (6.0.4.7)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -31,8 +31,8 @@ GEM
     concurrent-ruby (1.1.9)
     dnsruby (1.61.7)
       simpleidn (~> 0.1)
-    ecma-re-validator (0.3.0)
-      regexp_parser (~> 2.0)
+    ecma-re-validator (0.4.0)
+      regexp_parser (~> 2.2)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -42,25 +42,29 @@ GEM
     eventmachine (1.2.7-x64-mingw32)
     eventmachine (1.2.7-x86-mingw32)
     execjs (2.8.1)
-    faraday (1.8.0)
+    faraday (1.10.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
-      faraday-httpclient (~> 1.0.1)
+      faraday-httpclient (~> 1.0)
+      faraday-multipart (~> 1.0)
       faraday-net_http (~> 1.0)
-      faraday-net_http_persistent (~> 1.1)
+      faraday-net_http_persistent (~> 1.0)
       faraday-patron (~> 1.0)
       faraday-rack (~> 1.0)
-      multipart-post (>= 1.2, < 3)
+      faraday-retry (~> 1.0)
       ruby2_keywords (>= 0.0.4)
     faraday-em_http (1.0.0)
     faraday-em_synchrony (1.0.0)
     faraday-excon (1.1.0)
     faraday-httpclient (1.0.1)
+    faraday-multipart (1.0.3)
+      multipart-post (>= 1.2, < 3)
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
+    faraday-retry (1.0.3)
     ffi (1.15.3)
     ffi (1.15.3-x64-mingw32)
     ffi (1.15.3-x86-mingw32)
@@ -116,7 +120,7 @@ GEM
       octokit (~> 4.0)
       public_suffix (>= 3.0, < 5.0)
       typhoeus (~> 1.3)
-    graphql (1.12.16)
+    graphql (1.13.10)
     graphql-client (0.17.0)
       activesupport (>= 3.0)
       graphql (~> 1.10)
@@ -252,7 +256,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.14.4)
+    minitest (5.15.0)
     multipart-post (2.1.1)
     nokogiri (1.12.4)
       mini_portile2 (~> 2.6.1)
@@ -261,7 +265,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.4-x86-mingw32)
       racc (~> 1.4)
-    octokit (4.21.0)
+    octokit (4.22.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.21.0)
@@ -275,7 +279,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (2.1.1)
+    regexp_parser (2.2.1)
     rexml (3.2.5)
     rouge (3.26.0)
     rubocop (1.21.0)
@@ -318,7 +322,7 @@ GEM
     unf_ext (0.0.7.7-x86-mingw32)
     unicode-display_width (2.1.0)
     uri_template (0.7.0)
-    zeitwerk (2.4.2)
+    zeitwerk (2.5.4)
 
 PLATFORMS
   ruby
